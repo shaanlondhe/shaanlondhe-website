@@ -1,0 +1,518 @@
+                                                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaan Londhe - Product Manager</title>
+    <script>
+        // Mobile redirect
+        if (window.innerWidth <= 768) {
+            window.location.href = 'mobile.html';
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="site-title" onclick="scrollToTop(event)">
+                <span>S</span><span>H</span><span>A</span><span>A</span><span>N</span><span>&nbsp;</span><span>L</span><span>O</span><span>N</span><span>D</span><span>H</span><span>E</span>
+            </div>
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Desktop Social Icons -->
+            <div class="social-icons">
+                <a href="mailto:shaanlondhe@gmail.com" class="email-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaan-londhe-80b179170/" target="_blank" class="linkedin-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/ShaanLondhe" target="_blank" class="twitter-icon">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/shaanlondhe" target="_blank" class="github-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <a href="index.html" class="active">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <!-- Mobile Social Links -->
+        <div class="mobile-social-links">
+            <a href="mailto:shaanlondhe@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shaan-londhe-80b179170/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/ShaanLondhe" target="_blank">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://github.com/shaanlondhe" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Mobile Content -->
+        <div class="mobile-text-content">
+            <h1>Hi, my name is Shaan.</h1>
+            <p>I'm a product manager with expertise in finance, renewable energy, and electrical / digital infrastructure, driven by a passion for building impactful products.</p>
+            
+            <div class="mobile-section">
+                <h2>Education</h2>
+                <p>UCLA B.A. in Economics (2019-2023)</p>
+            </div>
+
+            <div class="mobile-section">
+                <h2>Work Experience</h2>
+                <p>Currently Product Manager at LandGate (2023-present), building products for renewables and energy infrastructure clients in a Series B startup environment.</p>
+                <p>Previously Investment Banking Summer Analyst at Rothschild & Co (Summer 2022), working on a $4.5B SaaS take-private transaction.</p>
+            </div>
+
+            <div class="mobile-section">
+                <h2>Reading List</h2>
+                <div class="reading-container">
+                    <div class="reading-category">
+                        <h3>Data Infrastructure</h3>
+                        <a href="https://www.datacenterfrontier.com/cloud/article/55253151/8-trends-that-will-shape-the-data-center-industry-in-2025" class="article-card">
+                            <h4>8 Trends That Will Shape the Data Center Industry in 2025</h4>
+                            <span class="source">Data Center Frontier</span>
+                        </a>
+                    </div>
+                    <div class="reading-category">
+                        <h3>Renewable Energy</h3>
+                        <a href="https://www.telkes.org/landowner-news/understanding-offtake-capacity-a-key-factor-in-renewable-energy-site-selection" class="article-card">
+                            <h4>Understanding Offtake Capacity: A Key Factor in Renewable Energy Site Selection</h4>
+                            <span class="source">Telkes</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-section">
+                <h2>Projects</h2>
+                <p>Coming soon - check desktop site for updates.</p>
+            </div>
+
+            <div class="desktop-reference">
+                Please visit the desktop site for more detailed information, photos, and full experience.
+            </div>
+        </div>
+
+        <!-- Desktop Content -->
+        <section id="about" class="fade-in">
+            <div class="background-container"></div>
+            <div class="about-container">
+                <div class="profile-image">
+                    <img src="./assets/headshot.jpg" alt="Shaan Londhe" class="headshot">
+                </div>
+                <div class="intro-text">
+                    <h1>Hi, my name is Shaan.</h1>
+                    <div class="expertise-icons">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <div class="icon">
+                            <svg class="wind-turbine" viewBox="0 0 24 24" width="1em" height="1em">
+                                <!-- Center pole -->
+                                <path fill="none" stroke="currentColor" d="M12,7 L12,21"/>
+                                <!-- Base -->
+                                <path fill="none" stroke="currentColor" d="M9,21 L15,21"/>
+                                <!-- Three rotating blades -->
+                                <g class="blade">
+                                    <!-- Blade 1 - pointing up -->
+                                    <path stroke="currentColor" stroke-width="2" d="M12,7 L12,2"/>
+                                    <!-- Blade 2 - 120° clockwise -->
+                                    <path stroke="currentColor" stroke-width="2" d="M12,7 L16.3,9.5"/>
+                                    <!-- Blade 3 - 120° counterclockwise -->
+                                    <path stroke="currentColor" stroke-width="2" d="M12,7 L7.7,9.5"/>
+                                </g>
+                                <!-- Center hub -->
+                                <circle fill="none" cx="12" cy="7" r="1"/>
+                            </svg>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                    <p>I'm a product manager with expertise in finance, renewable energy, and electrical / digital infrastructure, driven by a passion for building impactful products.</p>
+                    <div class="scroll-down-arrow" onclick="scrollToEducation()">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="fade-in">
+            <div class="education-hero">
+                <div class="grad-photo-bg">
+                    <img src="./assets/shaangradphoto.jpg" alt="Graduation">
+                </div>
+                <div class="education-overlay">
+                    <h2>Education</h2>
+                    <div class="school-details">
+                        <a href="https://www.ucla.edu" target="_blank">
+                            <img src="./assets/ucla-logo.jpg" alt="UCLA" class="ucla-logo">
+                        </a>
+                        <p class="degree">Bachelor of Arts in Economics</p>
+                        <span class="year">2019 - 2023</span>
+                    </div>
+                </div>
+                <!-- Add club icons -->
+                <div class="club-icons">
+                    <div class="club-icon-wrapper">
+                        <div class="club-caption">Member and leader of UBS workshops for underclassmen</div>
+                        <a href="https://uclaubs.com" target="_blank">
+                            <img src="./assets/ubs-logo.jpg" alt="UBS" class="club-icon">
+                        </a>
+                    </div>
+                    <div class="club-icon-wrapper">
+                        <div class="club-caption">Vice President of Bruin Investment and Trading Group</div>
+                        <a href="https://uclabitgroup.com/" target="_blank">
+                            <img src="./assets/bit-logo.jpg" alt="BIT" class="club-icon">
+                        </a>
+                    </div>
+                    <div class="club-icon-wrapper">
+                        <div class="club-caption">Active volunteer at the West LA VA</div>
+                        <a href="https://www.usvh.org/ucla-chapter" target="_blank">
+                            <img src="./assets/usvh-logo.jpg" alt="USVH" class="club-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work-experience" class="fade-in">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <!-- LandGate -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <a href="https://landgate.com" target="_blank">
+                                    <img src="./assets/landgate-logo.png" alt="LandGate" class="company-logo">
+                                </a>
+                                <span class="date">2023 - present</span>
+                            </div>
+                            <h3>Product Manager</h3>
+                        </div>
+                        <p>At LandGate, I've had the privilege of building products for renewables and energy infrastructure clients – all from scratch – in the dynamic environment of a Series B startup. My prior experiences were rooted in finance, but I realized that the excitement of bringing new ideas to life – combining data-driven decisions with creative solutions in product management – was where I thrived.</p>
+                    </div>
+                </div>
+
+                <!-- Rothschild -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <a href="https://www.rothschildandco.com/" target="_blank">
+                                    <img src="./assets/rothschild-logo.png" alt="Rothschild & Co" class="company-logo">
+                                </a>
+                                <span class="date">Summer 2022</span>
+                            </div>
+                            <h3>Investment Banking Summer Analyst</h3>
+                        </div>
+                        <p>As an investment banking summer analyst at Rothschild & Co, I played a key role in a $4.5 billion SaaS take-private transaction, improving presentation workflows and boosting investor engagement. My market research and detailed buyer profiles drove strategic client connections and business development opportunities.</p>
+                    </div>
+                </div>
+
+                <!-- Prior Internships -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <div class="multi-logo">
+                                    <a href="https://stifel.com" target="_blank">
+                                        <img src="./assets/stifel-logo.png" alt="Stifel" class="company-logo">
+                                    </a>
+                                    <a href="https://diamondcapadvisors.com/" target="_blank">
+                                        <img src="./assets/diamondcapitaladvisors-logo.png" alt="Diamond Capital Advisors" class="company-logo">
+                                    </a>
+                                    <a href="https://teleocapital.com/" target="_blank">
+                                        <img src="./assets/teleocapital-logo.png" alt="TELEO Capital" class="company-logo">
+                                    </a>
+                                </div>
+                                <span class="date">2020 - 2021</span>
+                            </div>
+                            <h3>Prior Internships</h3>
+                        </div>
+                        <p>My prior internships – in public finance at Stifel, corporate development at Diamond, and private equity at TELEO – equipped me with a diverse skill set in deal-making and strategic analysis. I honed my ability to optimize deal targeting, drive M&A opportunities, and streamline public finance processes. These experiences sharpened my ability to analyze data, deliver actionable insights, and support high-stakes transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="skillsets-wrapper">
+            <section id="skillsets" class="fade-in">
+                <h2>Skillsets</h2>
+                <div class="skills-container">
+                    <!-- Programming -->
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="./assets/sql-logo.jpg" alt="SQL" class="skill-icon">
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/python-logo.jpg" alt="Python" class="skill-icon">
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" class="skill-icon">
+                                <span>R</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/htmlcss-logo.jpg" alt="HTML/CSS" class="skill-icon">
+                                <span>HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="./assets/tableau-logo.jpg" alt="Tableau" class="skill-icon">
+                                <span>Tableau</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/powerbi-logo.jpg" alt="PowerBI" class="skill-icon">
+                                <span>PowerBI</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/plotly-logo.jpg" alt="Plotly" class="skill-icon">
+                                <span>Plotly</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/arcgis-logo.jpg" alt="ArcGIS" class="skill-icon">
+                                <span>ArcGIS</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/salesforce-logo.jpg" alt="Salesforce" class="skill-icon">
+                                <span>Salesforce</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/googleanalytics-logo.jpg" alt="Google Analytics" class="skill-icon">
+                                <span>Google Analytics</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="skill-icon">
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/miro-logo.jpg" alt="Miro" class="skill-icon">
+                                <span>Miro</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" class="skill-icon">
+                                <span>Jira</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/notion-logo.jpg" alt="Notion" class="skill-icon">
+                                <span>Notion</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & Automation -->
+                    <div class="skill-category">
+                        <h3>Cloud & Automation</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="./assets/aws-logo.jpg" alt="AWS" class="skill-icon">
+                                <span>AWS</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" class="skill-icon">
+                                <span>Selenium</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="./assets/docker-logo.jpg" alt="Docker" class="skill-icon">
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="pastimes" class="fade-in">
+            <h2>A Few Pastimes</h2>
+            <div class="pastimes-grid">
+                <!-- Off-roading / Car Camping -->
+                <div class="pastime-category">
+                    <h3>Off-roading & Car Camping</h3>
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="./assets/lexusgx1.jpg" alt="Off-roading">
+                            <div class="photo-caption">Technical trail in the Eastern Sierra</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/lexusgx2.jpg" alt="Off-roading">
+                            <div class="photo-caption">Car camping in Death Valley National Park</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/lexusgx3.jpg" alt="Off-roading">
+                            <div class="photo-caption">Exploring remote desert trails</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tennis -->
+                <div class="pastime-category">
+                    <h3>Tennis (Sometimes I dabble in pickleball too 😉)</h3>
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="./assets/shaantennis1.jpg" alt="Tennis">
+                            <div class="photo-caption">Club Tennis tournament</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaantennis2.jpg" alt="Tennis">
+                            <div class="photo-caption">Open doubles tournament</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hiking -->
+                <div class="pastime-category">
+                    <h3>Hiking</h3>
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="./assets/shaanoutdoors1.jpg" alt="Hiking">
+                            <div class="photo-caption">Olympic National Park, Washington</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaanoutdoors2.jpg" alt="Hiking">
+                            <div class="photo-caption">Napali Coast, Kauai</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaanoutdoors4.jpg" alt="Hiking">
+                            <div class="photo-caption">Half Dome Trail, Yosemite National Park</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla -->
+                <div class="pastime-category">
+                    <h3>Playing Tabla (Indian Classical Percussion Instrument)</h3>
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="./assets/shaantabla1.jpg" alt="Tabla">
+                            <div class="photo-caption">Concert performance with friends</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaantabla2.jpg" alt="Tabla">
+                            <div class="photo-caption">UCLA Herb Alpert School of Music, Indian Music Ensemble</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaantabla3.jpg" alt="Tabla">
+                            <div class="photo-caption">Fusion performance with Macedonian flute and classical guitar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reading-list" class="fade-in">
+            <h2>Current Reading List</h2>
+            <div class="reading-container">
+                <!-- Data Infrastructure -->
+                <div class="reading-category">
+                    <h3>Data Infrastructure</h3>
+                    <div class="articles-grid">
+                        <a href="https://www.datacenterfrontier.com/cloud/article/55253151/8-trends-that-will-shape-the-data-center-industry-in-2025" class="article-card" target="_blank">
+                            <h4>8 Trends That Will Shape the Data Center Industry in 2025</h4>
+                            <span class="source">Data Center Frontier</span>
+                        </a>
+                        <a href="https://blog.neterra.cloud/en/the-data-center-trends-to-follow-in-2025/" class="article-card" target="_blank">
+                            <h4>The Data Center Trends to Follow in 2025</h4>
+                            <span class="source">Neterra Cloud</span>
+                        </a>
+                        <a href="https://www.weforum.org/stories/2025/01/4-key-trends-to-watch-in-clean-energy-technology-in-2025/" class="article-card" target="_blank">
+                            <h4>4 Key Trends to Watch in Clean Energy Technology in 2025</h4>
+                            <span class="source">World Economic Forum</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Financial Markets Related to AI -->
+                <div class="reading-category">
+                    <h3>Financial Markets & AI</h3>
+                    <div class="articles-grid">
+                        <a href="https://www.mckinsey.com/industries/financial-services/our-insights/ai-powered-decision-making-for-the-bank-of-the-future" class="article-card" target="_blank">
+                            <h4>AI-Powered Decision-Making for the Bank of the Future</h4>
+                            <span class="source">McKinsey</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Renewable Energy -->
+                <div class="reading-category">
+                    <h3>Renewable Energy</h3>
+                    <div class="articles-grid">
+                        <a href="https://www.telkes.org/landowner-news/understanding-offtake-capacity-a-key-factor-in-renewable-energy-site-selection" class="article-card" target="_blank">
+                            <h4>Understanding Offtake Capacity: A Key Factor in Renewable Energy Site Selection</h4>
+                            <span class="source">Telkes</span>
+                        </a>
+                        <a href="https://www.patsnap.com/resources/blog/integrating-renewables-into-the-existing-energy-grid-challenges-and-solutions/" class="article-card" target="_blank">
+                            <h4>Integrating Renewables into the Existing Energy Grid: Challenges and Solutions</h4>
+                            <span class="source">PatSnap</span>
+                        </a>
+                        <a href="https://www.pnnl.gov/explainer-articles/renewable-integration" class="article-card" target="_blank">
+                            <h4>Renewable Integration</h4>
+                            <span class="source">Pacific Northwest National Laboratory</span>
+                        </a>
+                        <a href="https://www.pcienergysolutions.com/2024/10/09/total-transfer-capability-ttc-a-key-component-of-transmission-planning/" class="article-card" target="_blank">
+                            <h4>Total Transfer Capability (TTC): A Key Component of Transmission Planning</h4>
+                            <span class="source">PCI Energy Solutions</span>
+                        </a>
+                        <a href="https://acore.org/resources/bridging-demand-and-financing-voluntary-offtake-in-clean-energy/" class="article-card" target="_blank">
+                            <h4>Bridging Demand and Financing: Voluntary Offtake in Clean Energy</h4>
+                            <span class="source">ACORE</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="mobile.js"></script>
+</body>
+</html> 

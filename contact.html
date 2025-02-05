@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Shaan Londhe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Same Nav as other pages -->
+    <nav>
+        <div class="nav-content">
+            <div class="site-title">
+                <a href="index.html#about" style="text-decoration: none; color: inherit;">
+                    <span>S</span><span>H</span><span>A</span><span>A</span><span>N</span><span>&nbsp;</span><span>L</span><span>O</span><span>N</span><span>D</span><span>H</span><span>E</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="mailto:shaanlondhe@gmail.com" class="email-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaan-londhe-80b179170/" target="_blank" class="linkedin-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/ShaanLondhe" target="_blank" class="twitter-icon">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/shaanlondhe" target="_blank" class="github-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <section id="contact" class="fade-in">
+            <div class="contact-container">
+                <h1>Get in Touch</h1>
+                <form class="contact-form" action="https://formspree.io/f/xanqqgdo" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" rows="6" required></textarea>
+                    </div>
+                    <input type="text" name="_gotcha" style="display:none">
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/shaan-londhe-80b179170/" target="_blank" class="contact-button">
+                        <i class="fab fa-linkedin"></i>
+                        Connect on LinkedIn
+                    </a>
+                    <a href="mailto:shaanlondhe@gmail.com" class="contact-button">
+                        <i class="fas fa-envelope"></i>
+                        Send an Email
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

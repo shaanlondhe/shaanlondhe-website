@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Shaan Londhe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .projects-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-card {
+            background: #111111;
+            border-radius: 24px;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .project-title a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-title a:hover {
+            color: #4a9eff;
+        }
+
+        .project-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .project-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature {
+            background: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 16px;
+        }
+
+        .feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            color: #cccccc;
+            text-align: left;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 16px;
+            margin-top: 2rem;
+        }
+
+        .visit-site-btn {
+            background: #4a9eff;
+            color: #ffffff;
+            padding: 0.75rem 1rem;
+            border-radius: 16px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .visit-site-btn:hover {
+            background: #3a80e6;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="site-title" onclick="window.location.href='index.html'">
+                <span>S</span><span>H</span><span>A</span><span>A</span><span>N</span><span>&nbsp;</span><span>L</span><span>O</span><span>N</span><span>D</span><span>H</span><span>E</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="mailto:shaanlondhe@gmail.com" class="email-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaan-londhe-80b179170/" target="_blank" class="linkedin-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/ShaanLondhe" target="_blank" class="twitter-icon">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/shaanlondhe" target="_blank" class="github-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <section id="projects" class="fade-in">
+            <div class="projects-container">
+                <!-- TablaFlow -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2 class="project-title">TablaFlow</h2>
+                        <a href="https://tablaflow.com" target="_blank" class="visit-site-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Site
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        A web application for musicians playing tabla – a classical Indian instrument – focused on logging practice sessions and educating users about gradual BPM training techniques.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature">
+                            <h3>Time Tracking</h3>
+                            <p>Track your practice duration for each exercise to maintain consistency and monitor your dedication.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Metronome</h3>
+                            <p>Built-in metronome with BPM tracking to help you practice at the right tempo and track speed improvements.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Detailed Notes</h3>
+                            <p>Add descriptions and notes to your exercises to remember key techniques and improvements.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Progress Tracking</h3>
+                            <p>Visual progress tracking with BPM charts to see your improvement over time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OverlandX -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2 class="project-title">OverlandX</h2>
+                        <a href="https://overlandx.xyz" target="_blank" class="visit-site-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Site
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        A web application helping off-roading enthusiasts find routes along obscure trails within California, combining cutting-edge technology with local expertise to provide detailed trail information.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature">
+                            <h3>Trail Discovery</h3>
+                            <p>Access our comprehensive database of California's best off-road trails, complete with difficulty ratings, terrain descriptions, and estimated completion times.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>AI Trail Assistant</h3>
+                            <p>Get personalized trail recommendations from our intelligent assistant, which considers your vehicle capabilities, experience level, and preferences.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Detailed Information</h3>
+                            <p>Each trail comes with detailed information about technical ratings, terrain types, seasonal accessibility, and required vehicle specifications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

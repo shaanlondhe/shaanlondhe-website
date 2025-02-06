@@ -14,17 +14,28 @@
             margin-top: 80px;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             padding: 0 2rem;
         }
 
-        .resume-viewer {
-            width: 100%;
-            max-width: 1200px;
-            height: 100%;
-            border: none;
-            border-radius: 12px;
-            background: white;
+        .view-resume-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #4a9eff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-resume-button i {
+            margin-right: 10px;
+        }
+
+        .view-resume-button:hover {
+            background-color: #3a80e6;
         }
     </style>
 </head>
@@ -62,7 +73,10 @@
 
     <div class="main-container">
         <div class="resume-container">
-            <iframe src="./assets/Londhe%2C%20Shaan%20Resume.pdf" class="resume-viewer"></iframe>
+            <a href="./assets/Londhe, Shaan Resume.pdf" target="_blank" class="view-resume-button">
+                <i class="fas fa-file-pdf"></i>
+                View Resume
+            </a>
         </div>
     </div>
 

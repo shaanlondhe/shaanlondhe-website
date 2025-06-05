@@ -76,7 +76,7 @@ window.addEventListener('scroll', updateTimeline);
 window.addEventListener('resize', updateTimeline);
 
 function scrollToWorkExperience() {
-    const workSection = document.getElementById('projects');
+    const workSection = document.getElementById('work-experience');
     const navHeight = document.querySelector('nav').offsetHeight;
     const offset = workSection.offsetTop - navHeight - 20; // 20px extra padding
     

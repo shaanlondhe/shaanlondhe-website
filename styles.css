@@ -2716,4 +2716,15 @@ img[src*="teleocapital-logo"] {
 
 .visit-site-btn i {
     font-size: 0.9rem;
+}
+
+/* Remove all skillsets-related CSS */
+.skillsets-wrapper,
+.skills-container,
+.skill-category,
+.skills-grid,
+.skill-item,
+.skill-icon,
+.skill-item span {
+    display: none;
 } 

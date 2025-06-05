@@ -1,30 +1,47 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger-menu');
-    const mobileNav = document.querySelector('.mobile-nav');
-    
-    // Toggle mobile menu
-    hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
-        mobileNav.classList.toggle('active');
-        document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    // Toggle menu
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.innerHTML = navLinks.classList.contains('active') 
+            ? '<i class="fas fa-times"></i>' 
+            : '<i class="fas fa-bars"></i>';
     });
 
-    // Close mobile menu when clicking a link
-    const mobileLinks = document.querySelectorAll('.mobile-nav a');
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            mobileNav.classList.remove('active');
-            document.body.style.overflow = '';
+    // Close menu when clicking a link
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
         });
     });
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!hamburger.contains(event.target) && !mobileNav.contains(event.target)) {
-            hamburger.classList.remove('active');
-            mobileNav.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    });
+    // Handle active state for navigation
+    const sections = document.querySelectorAll('section');
+    const navLinkItems = document.querySelectorAll('.nav-links a');
+
+    function setActiveLink() {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop - 150) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinkItems.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', setActiveLink);
+    setActiveLink();
 }); 

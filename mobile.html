@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaan Londhe</title>
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="mobile-new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <!-- Navigation -->
+    <nav class="mobile-nav">
         <div class="nav-content">
             <div class="site-title">SHAAN LONDHE</div>
             <button class="menu-toggle">
@@ -18,71 +19,324 @@
         </div>
         <ul class="nav-links">
             <li><a href="#about" class="active">About</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
             <li><a href="#resume">Resume</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#blog">Blog</a></li>
+            <li><a href="#pastimes">Pastimes</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
-        <section id="about" class="section">
-            <h1>Hi, I'm Shaan.</h1>
-            <p>I'm a data-driven professional with startup and go-to-market experience. I thrive on turning insights into action to support teams across operations, partnerships, and growth initiatives.</p>
+        <!-- Hero Section with Headshot -->
+        <section id="about" class="hero-section">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <img src="./assets/Shaan%20headshot.png?v=2" alt="Shaan Londhe" class="headshot">
+                </div>
+                <div class="hero-text">
+                    <h1>Hi, my name is Shaan.</h1>
+                    <div class="expertise-icons">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <p>I'm a data-driven professional with startup and go-to-market experience. I thrive on turning insights into action to support teams across operations, partnerships, and growth initiatives.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="resume" class="section">
+        <!-- Work Experience -->
+        <section id="work-experience" class="work-section">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="company-info">
+                            <a href="https://landgate.com" target="_blank">
+                                <img src="./assets/landgate-logo.png" alt="LandGate" class="company-logo">
+                            </a>
+                            <span class="date">2023 - 2025</span>
+                        </div>
+                        <h3>Sales Enablement Associate</h3>
+                    </div>
+                    <p>I supported LandGate's go-to-market teams by designing enablement strategies, refining sales processes, and delivering data-driven insights that enhanced productivity and customer engagement. My work spanned CRM management, content creation, and cross-functional projects that positioned the sales organization for scalable growth.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="company-info">
+                            <a href="https://www.rothschildandco.com/" target="_blank">
+                                <img src="./assets/rothschild-logo.png" alt="Rothschild & Co" class="company-logo">
+                            </a>
+                            <span class="date">Summer 2022</span>
+                        </div>
+                        <h3>M&A Summer Analyst</h3>
+                    </div>
+                    <p>As a summer analyst at Rothschild & Co, I played a key role in a $4.5 billion SaaS take-private transaction, improving presentation workflows and boosting investor engagement. My market research and detailed buyer profiles drove strategic client connections and business development opportunities.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="company-info">
+                            <div class="multi-logo">
+                                <a href="https://stifel.com" target="_blank">
+                                    <img src="./assets/stifel-logo.png" alt="Stifel" class="company-logo">
+                                </a>
+                                <a href="https://diamondcapadvisors.com/" target="_blank">
+                                    <img src="./assets/diamondcapitaladvisors-logo.png" alt="Diamond Capital Advisors" class="company-logo">
+                                </a>
+                                <a href="https://teleocapital.com/" target="_blank">
+                                    <img src="./assets/teleocapital-logo.png" alt="TELEO Capital" class="company-logo">
+                                </a>
+                            </div>
+                            <span class="date">2020 - 2021</span>
+                        </div>
+                        <h3>Prior Internships</h3>
+                    </div>
+                    <p>My prior internships equipped me with a diverse skill set in deal-making and strategic analysis. I was given the opportunity to optimize deal targeting and outreach campaigns, sharpening my ability to analyze data, deliver actionable insights, and support high-stakes transactions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section">
             <h2>Resume</h2>
-            <div class="resume-actions">
-                <a href="./assets/Londhe, Shaan Resume.pdf" download class="action-button">
+            <div class="resume-content">
+                <p>Download my complete resume for detailed information about my experience, skills, and achievements.</p>
+                <a href="./assets/Londhe, Shaan Resume.pdf" download class="resume-download-btn">
                     <i class="fas fa-download"></i>
-                    Download PDF
+                    <span>Download PDF</span>
                 </a>
             </div>
-            <div class="resume-preview">
-                <iframe src="https://docs.google.com/viewer?url=https://shaanlondhe.com/assets/Londhe%2C%20Shaan%20Resume.pdf&embedded=true"></iframe>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <h2>Education</h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="university-info">
+                            <a href="https://www.ucla.edu" target="_blank">
+                                <img src="./assets/ucla-logo.jpg" alt="UCLA" class="university-logo">
+                            </a>
+                            <span class="date">2019 - 2023</span>
+                        </div>
+                        <h3>Bachelor of Arts in Economics</h3>
+                    </div>
+                    <p>Graduated from UCLA with a focus on economic theory, data analysis, and quantitative methods. Active in student organizations including UCLA Undergraduate Business Society, BIT Group, and USVH.</p>
+                </div>
             </div>
         </section>
 
-        <section id="projects" class="section">
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
             <h2>Projects</h2>
             <div class="project-cards">
                 <div class="project-card">
-                    <h3>TablaFlow</h3>
-                    <p>A practice tracking application for tabla players, featuring time tracking, BPM monitoring, and progress visualization tools.</p>
-                    <a href="https://tablaflow.com" target="_blank" class="project-link">Visit Site</a>
+                    <div class="project-content">
+                        <h3>TablaFlow</h3>
+                        <p>A practice tracking application for tabla players, featuring time tracking, BPM monitoring, and progress visualization tools.</p>
+                        <a href="https://tablaflow.com" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Site
+                        </a>
+                    </div>
                 </div>
+                
                 <div class="project-card">
-                    <h3>OverlandX</h3>
-                    <p>A trail discovery platform for off-road enthusiasts in California, providing detailed route information and AI-powered recommendations.</p>
-                    <a href="https://overlandx.xyz" target="_blank" class="project-link">Visit Site</a>
+                    <div class="project-content">
+                        <h3>OverlandX</h3>
+                        <p>A trail discovery platform for off-road enthusiasts in California, providing detailed route information and AI-powered recommendations.</p>
+                        <a href="https://overlandx.xyz" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Site
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <h2>Blog</h2>
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Beneath Dodger Stadium: A History of Chavez Ravine</h3>
+                        <p>Uncovering the complex history and transformation of a Los Angeles community...</p>
+                        <div class="blog-meta">
+                            <span class="post-date">January 2025</span>
+                        </div>
+                        <a href="./blog/chavez-ravine.html" class="blog-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>A Timeless Mural: The Great Wall of Los Angeles</h3>
+                        <p>Exploring the cultural significance and historical impact of one of Los Angeles' most important public art installations...</p>
+                        <div class="blog-meta">
+                            <span class="post-date">October 2024</span>
+                        </div>
+                        <a href="./blog/great-wall-la.html" class="blog-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Ragtime: Historic, Dynamic, and Influential</h3>
+                        <p>Examining the origins, evolution, and lasting impact of Ragtime on American music and culture...</p>
+                        <div class="blog-meta">
+                            <span class="post-date">February 2023</span>
+                        </div>
+                        <a href="./blog/ragtime.html" class="blog-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>The Panic of 1907: Lessons in Financial Crisis Management</h3>
+                        <p>Analyzing the causes, responses, and lasting impact of a pivotal moment in financial history...</p>
+                        <div class="blog-meta">
+                            <span class="post-date">January 2023</span>
+                        </div>
+                        <a href="./blog/panic-1907.html" class="blog-link">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>The Potentially Habitable Planets of Kepler-62</h3>
+                        <p>Exploring the groundbreaking discovery of Earth-like planets in the Kepler-62 system...</p>
+                        <div class="blog-meta">
+                            <span class="post-date">December 2022</span>
+                        </div>
+                        <a href="./blog/kepler-62.html" class="blog-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pastimes Section -->
+        <section id="pastimes" class="pastimes-section">
+            <h2>A Few Pastimes</h2>
+            <div class="pastimes-grid">
+                <!-- Off-roading / Car Camping -->
+                <div class="pastime-category">
+                    <h3>Off-roading & Car Camping</h3>
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="./assets/lexusgx1.jpg" alt="Off-roading">
+                            <div class="photo-caption">Technical trail in the Eastern Sierra</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/lexusgx2.jpg" alt="Off-roading">
+                            <div class="photo-caption">Car camping in Death Valley National Park</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/lexusgx3.jpg" alt="Off-roading">
+                            <div class="photo-caption">Exploring remote desert trails</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tennis -->
+                <div class="pastime-category">
+                    <h3>Tennis (Sometimes I dabble in pickleball too)</h3>
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="./assets/shaantennis1.jpg" alt="Tennis">
+                            <div class="photo-caption">Club Tennis tournament</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaantennis2.jpg" alt="Tennis">
+                            <div class="photo-caption">Open doubles tournament</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hiking -->
+                <div class="pastime-category">
+                    <h3>Hiking</h3>
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="./assets/shaanoutdoors1.jpg" alt="Hiking">
+                            <div class="photo-caption">Olympic National Park, Washington</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaanoutdoors2.jpg" alt="Hiking">
+                            <div class="photo-caption">Napali Coast, Kauai</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaanoutdoors4.jpg" alt="Hiking">
+                            <div class="photo-caption">Half Dome Trail, Yosemite National Park</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla -->
+                <div class="pastime-category">
+                    <h3>Playing Tabla (Indian Classical Percussion Instrument)</h3>
+                    <div class="photo-grid">
+                        <div class="photo-item">
+                            <img src="./assets/shaantabla1.jpg" alt="Tabla">
+                            <div class="photo-caption">Concert performance with friends</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaantabla2.jpg" alt="Tabla">
+                            <div class="photo-caption">UCLA Herb Alpert School of Music, Indian Music Ensemble</div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="./assets/shaantabla3.jpg" alt="Tabla">
+                            <div class="photo-caption">Fusion performance with Macedonian flute and classical guitar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
             <h2>Get in Touch</h2>
-            <div class="social-links">
-                <a href="mailto:shaanlondhe@gmail.com" class="social-link">
-                    <i class="fas fa-envelope"></i>
-                    Email
-                </a>
-                <a href="https://www.linkedin.com/in/shaan-londhe-80b179170/" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </a>
-                <a href="https://x.com/ShaanLondhe" target="_blank" class="social-link">
-                    <i class="fab fa-x-twitter"></i>
-                    Twitter
-                </a>
-                <a href="https://github.com/shaanlondhe" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </a>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Let's connect and discuss opportunities in data-driven growth, sales enablement, and startup operations.</p>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:shaanlondhe@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shaan-londhe-80b179170/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/ShaanLondhe" target="_blank" class="social-link">
+                        <i class="fab fa-x-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://github.com/shaanlondhe" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <script src="mobile.js"></script>
+    <script src="mobile-new.js"></script>
 </body>
-</html> 
+</html>
